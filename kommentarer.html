@@ -1,0 +1,15 @@
+<section id="kommentarer" class="tab-content">
+    <header>
+        <h1>Gästbok & Kommentarer</h1>
+        <p>Läs vad andra lyssnare och artister tycker, eller skriv en egen kommentar!</p>
+    </header>
+
+    <div class="comments-list" id="commentsList">
+    </div>
+
+    <form class="comment-form" onsubmit="addGlobalComment(event)">
+        <input type="text" id="commentNameInput" placeholder="Ditt namn..." required>
+        <input type="text" id="commentTextInput" placeholder="Skriv en kommentar..." required>
+        <button type="submit">Skicka</button>
+    </form>
+</section>

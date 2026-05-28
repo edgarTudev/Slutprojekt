@@ -1,0 +1,86 @@
+/* Köp Beats Page Specific Styles */
+
+#kop-beats header {
+    text-align: center;
+    margin-bottom: 32px;
+}
+
+#kop-beats header h1 {
+    background: linear-gradient(90deg, #2997FF, #00D4FF);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 2rem;
+    margin-bottom: 12px;
+}
+
+#kop-beats header p {
+    color: #8E8E93;
+    font-size: 0.95rem;
+}
+
+#kop-beats .song-list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+#kop-beats .song-card {
+    background: linear-gradient(135deg, #1C1C1E 0%, #262628 100%);
+    border-radius: 18px;
+    padding: 24px;
+    border: 1.5px solid rgba(41, 151, 255, 0.2);
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.3);
+}
+
+#kop-beats .song-card:hover {
+    border-color: rgba(41, 151, 255, 0.5);
+    box-shadow: 0 12px 32px rgba(41, 151, 255, 0.15);
+    transform: translateY(-2px);
+}
+
+#kop-beats .song-card h3 {
+    color: #FFFFFF;
+    margin-bottom: 8px;
+    font-size: 1.3rem;
+    font-weight: 700;
+}
+
+#kop-beats .price-tag {
+    display: inline-block;
+    background: linear-gradient(135deg, #2997FF, #00D4FF);
+    color: #FFFFFF;
+    padding: 6px 14px;
+    border-radius: 20px;
+    font-size: 0.85rem;
+    font-weight: 700;
+    margin-bottom: 14px;
+}
+
+#kop-beats audio {
+    margin-bottom: 14px;
+    height: 40px;
+}
+
+#kop-beats .buy-btn {
+    width: 100%;
+    padding: 12px 20px;
+    border: none;
+    background: linear-gradient(135deg, #2997FF, #0077ED);
+    color: #FFFFFF;
+    font-weight: 700;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    font-size: 0.95rem;
+}
+
+#kop-beats .buy-btn:hover {
+    background: linear-gradient(135deg, #0077ED, #005CCB);
+    transform: scale(1.02);
+    box-shadow: 0 6px 20px rgba(41, 151, 255, 0.3);
+}
+
+#kop-beats .buy-btn:active {
+    transform: scale(0.98);
+}

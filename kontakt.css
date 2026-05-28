@@ -1,0 +1,50 @@
+/* Kontakt Page Specific Styles */
+
+#kontakt .contact-card {
+    background: linear-gradient(135deg, #1C1C1E 0%, #262628 100%);
+    border-radius: 20px;
+    padding: 48px 32px;
+    text-align: center;
+    border: 1px solid rgba(41, 151, 255, 0.15);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+}
+
+#kontakt .contact-card h1 {
+    background: linear-gradient(90deg, #FFFFFF, #2997FF);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+    font-weight: 700;
+}
+
+#kontakt .contact-card p {
+    color: #E5E5EA;
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 32px;
+}
+
+#kontakt .contact-btn {
+    display: inline-block;
+    padding: 14px 36px;
+    background: linear-gradient(135deg, #2997FF, #0077ED);
+    color: #FFFFFF;
+    text-decoration: none;
+    border-radius: 12px;
+    font-weight: 700;
+    font-size: 0.95rem;
+    transition: all 0.3s ease;
+    border: none;
+    cursor: pointer;
+}
+
+#kontakt .contact-btn:hover {
+    background: linear-gradient(135deg, #0077ED, #005CCB);
+    transform: translateY(-2px);
+    box-shadow: 0 8px 24px rgba(41, 151, 255, 0.3);
+}
+
+#kontakt .contact-btn:active {
+    transform: translateY(0);
+}

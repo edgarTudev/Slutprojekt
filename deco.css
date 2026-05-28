@@ -1,0 +1,290 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", "Segoe UI", Roboto, sans-serif;
+    background-color: #000000;
+    color: #ffffff;
+    padding: 20px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Nav Bar */
+.navbar {
+    width: 100%;
+    max-width: 650px;
+    background-color: rgba(28, 28, 30, 0.8);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border-radius: 20px;
+    padding: 14px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 0.5px solid rgba(255, 255, 255, 0.08);
+    margin-bottom: 32px;
+}
+
+.navbar .brand {
+    font-weight: 700;
+    font-size: 1.1rem;
+    color: #FFFFFF;
+}
+
+.navbar .nav-links {
+    display: flex;
+    gap: 16px;
+    list-style: none;
+    font-size: 0.82rem;
+}
+
+.navbar .nav-links a {
+    color: #8E8E93;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.2s ease-in-out;
+}
+
+.navbar .nav-links a:hover {
+    color: #2997FF;
+}
+
+.container {
+    width: 100%;
+    max-width: 650px;
+    padding: 0 20px;
+}
+
+.tab-content {
+    display: none;
+}
+
+.tab-content.active {
+    display: block;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 32px;
+}
+
+header h1 {
+    font-weight: 700;
+    font-size: 1.8rem;
+    letter-spacing: -0.5px;
+    margin-bottom: 8px;
+    background: linear-gradient(90deg, #FFFFFF, #8E8E93);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+header p {
+    color: #8E8E93;
+    font-size: 0.95rem;
+}
+
+.drop-zone {
+    border: 1.5px dashed #3A3A3C;
+    border-radius: 20px;
+    padding: 42px 20px;
+    text-align: center;
+    background-color: #1C1C1E;
+    cursor: pointer;
+    transition: all 0.3s cubic-bezier(0.25, 1, 0.5, 1);
+    margin-bottom: 32px;
+}
+
+.drop-zone:hover, .drop-zone.dragover {
+    background-color: #2C2C2E;
+    border-color: #2997FF;
+}
+
+.drop-zone p {
+    color: #8E8E93;
+    font-size: 0.95rem;
+}
+
+.song-list {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    margin-top: 16px;
+}
+
+.song-card {
+    background-color: #1C1C1E;
+    border-radius: 18px;
+    padding: 22px;
+    box-shadow: 0 4px 24px rgba(0, 0, 0, 0.25);
+    border: 0.5px solid rgba(255, 255, 255, 0.06);
+}
+
+.song-card h3 {
+    margin-bottom: 12px;
+    font-size: 1.05rem;
+    font-weight: 600;
+}
+
+.price-tag {
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: #2997FF;
+    margin-bottom: 10px;
+}
+
+audio {
+    width: 100%;
+    margin-bottom: 14px;
+    border-radius: 8px;
+    color-scheme: dark;
+}
+
+.rating-section {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 18px;
+}
+
+.rating-section label {
+    font-weight: 500;
+    color: #8E8E93;
+    font-size: 0.82rem;
+}
+
+.stars {
+    cursor: pointer;
+    font-size: 1.2rem;
+    color: #2C2C2E;
+    display: flex;
+    gap: 2px;
+}
+
+.stars span.selected {
+    color: #2997FF;
+}
+
+.rating-text {
+    color: #8E8E93;
+    font-size: 0.8rem;
+}
+
+.comments-section h4 {
+    margin-bottom: 8px;
+    font-size: 0.85rem;
+    font-weight: 600;
+}
+
+.comments-list {
+    max-height: 100px;
+    overflow-y: auto;
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.comment {
+    font-size: 0.85rem;
+    background-color: #2C2C2E;
+    padding: 8px 12px;
+    border-radius: 10px;
+    color: #E5E5EA;
+}
+
+.comment-form {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.comment-form input {
+    padding: 8px 12px;
+    border-radius: 10px;
+    border: none;
+    background-color: #2C2C2E;
+    color: #FFFFFF;
+    font-size: 0.82rem;
+}
+
+.comment-form input:focus {
+    outline: 1px solid #2997FF;
+}
+
+.comment-form button {
+    padding: 8px;
+    border: none;
+    background-color: #2997FF;
+    color: #FFFFFF;
+    border-radius: 10px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.15s;
+}
+
+.comment-form button:hover {
+    background-color: #0077ED;
+}
+
+/* Om oss / Kontakt kort */
+.about-card, .contact-card {
+    background-color: #1C1C1E;
+    border-radius: 18px;
+    padding: 32px;
+    text-align: center;
+    border: 0.5px solid rgba(255, 255, 255, 0.06);
+}
+
+.about-card h1, .contact-card h1 {
+    margin-bottom: 16px;
+    font-size: 1.6rem;
+    font-weight: 700;
+}
+
+.about-card p, .contact-card p {
+    color: #8E8E93;
+    font-size: 0.95rem;
+    line-height: 1.5;
+}
+
+.about-card h3 {
+    margin-top: 16px;
+    font-size: 1.1rem;
+}
+
+.contact-btn {
+    display: inline-block;
+    margin-top: 24px;
+    padding: 14px 28px;
+    background-color: #2997FF;
+    color: white;
+    text-decoration: none;
+    border-radius: 12px;
+    font-weight: 600;
+    transition: background-color 0.2s;
+}
+
+.contact-btn:hover {
+    background-color: #0077ED;
+}
+
+.buy-btn {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    background-color: #2997FF;
+    color: white;
+    font-weight: 600;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background 0.15s;
+}
+
+.buy-btn:hover {
+    background-color: #0077ED;
+}

@@ -1,0 +1,51 @@
+/* Audio Player Styling */
+audio {
+    width: 100%;
+    margin-bottom: 14px;
+    border-radius: 8px;
+    color-scheme: dark;
+    height: 34px;
+    accent-color: #2997FF;
+}
+
+/* Webkit browsers (Chrome, Safari, Edge) */
+audio::-webkit-media-controls-container {
+    background-color: #2C2C2E;
+    border-radius: 8px;
+}
+
+audio::-webkit-media-controls-panel {
+    background-color: #2C2C2E;
+}
+
+audio::-webkit-media-controls-mute-button {
+    color: #FFFFFF;
+}
+
+audio::-webkit-media-controls-play-button {
+    color: #2997FF;
+    background-color: transparent;
+}
+
+audio::-webkit-media-controls-play-button:hover {
+    color: #0077ED;
+}
+
+audio::-webkit-media-controls-current-time-display,
+audio::-webkit-media-controls-time-remaining-display {
+    color: #8E8E93;
+    font-size: 0.8rem;
+}
+
+audio::-webkit-media-controls-timeline {
+    background-color: #1C1C1E;
+}
+
+audio::-webkit-media-controls-volume-slider {
+    accent-color: #2997FF;
+}
+
+/* Firefox */
+audio {
+    accent-color: #2997FF;
+}

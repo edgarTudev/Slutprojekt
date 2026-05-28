@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Min Musikproduktion</title>
+    <link rel="stylesheet" href="deco.css">
+    <link rel="stylesheet" href="audio-controls.css">
+    <link rel="stylesheet" href="hem.css">
+    <link rel="stylesheet" href="kop-beats.css">
+    <link rel="stylesheet" href="om-mig.css">
+    <link rel="stylesheet" href="kommentarer.css">
+    <link rel="stylesheet" href="kontakt.css">
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="brand">🎵 e9tsebeats</div>
+        <ul class="nav-links">
+            <li><a href="#" onclick="showSection('hem')">Hem</a></li>
+            <li><a href="#" onclick="showSection('kop-beats')">Köp Beats</a></li>
+            <li><a href="#" onclick="showSection('om-mig')">Om mig</a></li>
+            <li><a href="#" onclick="showSection('kommentarer')">Kommentarer</a></li>
+            <li><a href="#" onclick="showSection('kontakt')">Kontakt</a></li>
+        </ul>
+    </nav>
+
+    <div class="container" id="pages">
+    </div>
+
+    <script src="app.js"></script>
+    <script>
+        // Load pages on startup
+        async function loadPages() {
+            const pages = document.getElementById('pages');
+            const pageFiles = ['hem.html', 'kop-beats.html', 'om-mig.html', 'kommentarer.html', 'kontakt.html'];
+            
+            for (const file of pageFiles) {
+                const response = await fetch(file);
+                const content = await response.text();
+                pages.innerHTML += content;
+            }
+            
+            // Initialize first section as active
+            showSection('hem');
+        }
+        
+        loadPages();
+    </script>
+</body>
+</html>

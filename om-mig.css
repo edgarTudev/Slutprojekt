@@ -1,0 +1,38 @@
+/* Om Mig Page Specific Styles */
+
+#om-mig .about-card {
+    background: linear-gradient(135deg, #1C1C1E 0%, #262628 100%);
+    border-radius: 20px;
+    padding: 40px;
+    border: 1px solid rgba(41, 151, 255, 0.15);
+    text-align: left;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+}
+
+#om-mig .about-card h1 {
+    background: linear-gradient(90deg, #FFFFFF, #2997FF);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+    font-weight: 700;
+}
+
+#om-mig .about-card p {
+    color: #E5E5EA;
+    font-size: 0.95rem;
+    line-height: 1.6;
+    margin-bottom: 12px;
+}
+
+#om-mig .about-card h3 {
+    color: #2997FF;
+    font-size: 1.2rem;
+    margin-top: 24px;
+    margin-bottom: 12px;
+    font-weight: 700;
+}
+
+#om-mig .about-card br {
+    margin-bottom: 8px;
+}
